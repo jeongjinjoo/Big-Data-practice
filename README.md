@@ -27,7 +27,7 @@
 </table>
 </div>
 <div align="center">
-  ✒️ TOOL
+  <b>✒️ TOOL></b>
  <h4>
 <!-- 기술 스택 (아이콘) -->
 <img src="https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=mariaDB&logoColor=white"/>
