@@ -16,17 +16,22 @@
   <tbody>
     <tr> 
       <td align="center"><a href="https://github.com/jeongjinjoo"><img src="width="100px;" alt=""/><br /><sub><b> 🧸정진주 </b></sub></a><br /></td>
-      <td align="center"><a href=""><img src="" width="100px;" alt=""/><br /><sub><b>🐶 강유성</b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/yoousung"><img src="" width="100px;" alt=""/><br /><sub><b>🐶 강유성</b></sub></a><br /></td>
       <td align="center"><a href="https://github.com/sjpark-08"><img src="" width="100px;" alt=""/><br /><sub><b>🦊박성준</b></sub></a><br /></td>
-      <td align="center"><a href=""><img src="" width="100px;" alt=""/><br /><sub><b>🐥이은서</b></sub></a><br /></td>
-      <td align="center"><a href=""><img src="" width="100px;" alt=""/><br /><sub><b>🐰정수진</b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/tkckdnjs"><img src="" width="100px;" alt=""/><br /><sub><b>🐥이은서</b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/Sujina2024"><img src="" width="100px;" alt=""/><br /><sub><b>🐰정수진</b></sub></a><br /></td>
      <tr/>
   </tbody>
 </table>
 
-        <h3>✒️ TOOL</h3>
+
+
+       ✒️ TOOL
  <h4>
 <!-- 기술 스택 (아이콘) -->
 <img src="https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=mariaDB&logoColor=white"/>
         <img src="https://img.shields.io/badge/Ubunt-e95420?style=flat-square&logo=mariaDB&logoColor=white"/>
         </h4>
+
+
+        
