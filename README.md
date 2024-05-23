@@ -11,6 +11,8 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=ff7900&height=150&section=footer" />
 </div>
 
+<div align="center"><br><b>:dizzy:한화시스템 BEYOND SW캠프 1차 프로젝트:dizzy:</b></br></div>
+
 # 📣 프로젝트 목적 및 효과
 
 **1. 소비자의 시간과 비용 절약 :**
@@ -41,10 +43,6 @@
    플랫폼은 사용자 데이터를 분석하여 소비자에게 맞춤형 추천 서비스를 제공할 수 있습니다.
    계절별, 행사별로 인기 있는 파티룸을 추천해주어 소비자의 선택을 도울 수 있습니다.
 
-
-
-
-<div align="center"><br><b>:dizzy:한화시스템 BEYOND SW캠프 1차 프로젝트:dizzy:</b></br></div>
 
 <div align="center">
 <h2></h2>
