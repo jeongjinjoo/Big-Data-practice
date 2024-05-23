@@ -17,7 +17,7 @@
 <table>
   <tbody>
     <tr> 
-      <td align="center"><a href="https://github.com/jeongjinjoo"><img src="width="100px;" alt=""/><br /><sub><b> 🧸정진주 </b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/jeongjinjoo"><img src="https://github.com/jeongjinjoo/test1/blob/main/%EC%A0%95%EC%A7%84%EC%A3%BC.png"width="100px;" alt=""/><br /><sub><b> 🧸정진주 </b></sub></a><br /></td>
       <td align="center"><a href="https://github.com/yoousung"><img src="https://github.com/jeongjinjoo/test1/blob/main/%EA%B0%95%EC%9C%A0%EC%84%B1.png" width="100px;" alt=""/><br /><sub><b>🐶 강유성</b></sub></a><br /></td>
       <td align="center"><a href="https://github.com/sjpark-08"><img src="" width="120px;" alt=""/><br /><sub><b>🦊박성준</b></sub></a><br /></td>
       <td align="center"><a href="https://github.com/tkckdnjs"><img src="" width="120px;" alt=""/><br /><sub><b>🐥이은서</b></sub></a><br /></td>
