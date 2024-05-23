@@ -1,4 +1,4 @@
-# be08-1st-project-THREE-PLANNERS
+# be08-1st-project-🧦🧦🧦-PLANNERS
 
 ![PLANNER LOGO](https://github.com/jeongjinjoo/test1/blob/main/001.png)
 
@@ -6,7 +6,7 @@
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=ff7900&height=150&section=header" />
-  <h1 style="color:#ff7900; border: none;">📝 Planners 📝</h1>
+  <h1 style="color:#ff7900; border: none;">📝 PLANNERS 📝</h1>
   <img src="https://capsule-render.vercel.app/api?type=waving&color=ff7900&height=150&section=footer" />
 </div>
 
@@ -37,6 +37,8 @@
 </div>
 <br>
 <br>
+
+## WBS
 
 <h2>🥳 프로젝트 소개</h2>
 ✔️ 바쁜 일상생활 속에서 추억을 선물해주는 공간을 찾기 위해 파티룸 대여 서비스를 제작하였습니다.
@@ -113,6 +115,9 @@
 
 <br>
 <br>
+
+
+
 
 ## 한 줄 회고록
 
