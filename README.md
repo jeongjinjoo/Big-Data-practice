@@ -1,6 +1,6 @@
 # 플래너
 
-![PLANNER LOGO](https://github.com/beyond-sw-camp/be05-2nd-1team-BBABAP/assets/113917104/aa9c8201-c25c-4553-89cb-bcf0a741ce58)
+![PLANNER LOGO](https://github.com/jeongjinjoo/test1/blob/main/001.png)
 
 
 
