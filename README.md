@@ -1,4 +1,4 @@
-# 플래너
+# be08-1st-project-THREE-PLANNERS
 
 ![PLANNER LOGO](https://github.com/jeongjinjoo/test1/blob/main/001.png)
 
