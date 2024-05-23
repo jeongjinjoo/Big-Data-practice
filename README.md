@@ -27,6 +27,14 @@
 </table>
 </div>
 
+  ✒️ TOOL
+ <h4>
+<!-- 기술 스택 (아이콘) -->
+<img src="https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=mariaDB&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Ubunt-e95420?style=flat-square&logo=mariaDB&logoColor=white"/>
+        </h4>
+
+
 ## 📣 프로젝트 목적 및 효과
 
 **1. 소비자의 시간과 비용 절약 :**
@@ -57,14 +65,6 @@
    플랫폼은 사용자 데이터를 분석하여 소비자에게 맞춤형 추천 서비스를 제공할 수 있습니다.
    계절별, 행사별로 인기 있는 파티룸을 추천해주어 소비자의 선택을 도울 수 있습니다.
 
-
-
-       ✒️ TOOL
- <h4>
-<!-- 기술 스택 (아이콘) -->
-<img src="https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=mariaDB&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Ubunt-e95420?style=flat-square&logo=mariaDB&logoColor=white"/>
-        </h4>
 
 
         
