@@ -13,7 +13,6 @@
 <div align="center"><br><b>:dizzy:한화시스템 BEYOND SW캠프 1차 프로젝트:dizzy:</b></br></div>
 
 <div align="center">
-<h2></h2>
 <table>
   <tbody>
     <tr> 
