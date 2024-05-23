@@ -6,7 +6,7 @@
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=ff7900&height=150&section=header" />
-  <h1 style="color:#ff7900; border: none;">🤜 Planners 🤛</h1>
+  <h1 style="color:#ff7900; border: none;">📝 Planners 📝</h1>
   <img src="https://capsule-render.vercel.app/api?type=waving&color=ff7900&height=150&section=footer" />
 </div>
 
@@ -28,14 +28,28 @@
 </div>
 <div align="center">
   <b>✒️ TOOL</b>
- <h4>
-<!-- 기술 스택 (아이콘) -->
-<img src="https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=mariaDB&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Ubunt-e95420?style=flat-square&logo=mariaDB&logoColor=white"/>
-        </h4>
 </div>
+<div align = center>
+        <img src="https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=mariaDB&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Ubunt-e95420?style=flat-square&logo=mariaDB&logoColor=white"/>
+</div>
+<br>
+<br>
 
-## 📣 프로젝트 목적 및 효과
+<h2>🥳 프로젝트 소개</h2>
+✔️ 바쁜 일상생활 속에서 추억을 선물해주는 공간을 찾기 위해 파티룸 대여 서비스를 제작하였습니다.
+
+✔️ 연말, 새해, 생일 등 각종 기념일에 지인들과 함게 이색적인 이벤트를 찾으시는 분들께 적합합니다.
+
+✔️ 회원가입과 로그인을 통해 개인정보를 입력하고, 다양한 파티룸들을 살펴보며 원하는 파티룸을 관심장소에 등록할 수 있습니다. 예약 시, 필요한 파티 용품과 먹거리를 선택한 후 결제합니다. 
+
+✔️ 파티룸 사용 빈도가 많을수록 등급이 업그레이드 됩니다. (일반, silver, gold) 
+* 등급이 업그레이드 될수록 할인률이 상승합니다.
+  
+✔️ 리뷰 개수가 많을수록 포인트를 얻게 됩니다.
+
+
+## 🌼 프로젝트 목적 및 효과
 
 **1. 소비자의 시간과 비용 절약 :**
    다양한 파티룸을 한 곳에서 비교할 수 있어, 소비자가 여러 웹사이트를 일일이 방문하지 않아도 됩니다.
@@ -64,7 +78,5 @@
 **7. 데이터 분석을 통한 맞춤형 서비스 제공 :**
    플랫폼은 사용자 데이터를 분석하여 소비자에게 맞춤형 추천 서비스를 제공할 수 있습니다.
    계절별, 행사별로 인기 있는 파티룸을 추천해주어 소비자의 선택을 도울 수 있습니다.
-
-
 
         
