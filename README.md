@@ -18,16 +18,16 @@
 <table>
   <tbody>
     <tr> 
-      <td align="center"><a href="https://github.com/jeongjinjoo"><img src="width="100px;" alt=""/><br /><sub><b> 🧸정진주 </b></sub></a><br /></td>
-      <td align="center"><a href="https://github.com/yoousung"><img src="" width="100px;" alt=""/><br /><sub><b>🐶 강유성</b></sub></a><br /></td>
-      <td align="center"><a href="https://github.com/sjpark-08"><img src="" width="100px;" alt=""/><br /><sub><b>🦊박성준</b></sub></a><br /></td>
-      <td align="center"><a href="https://github.com/tkckdnjs"><img src="" width="100px;" alt=""/><br /><sub><b>🐥이은서</b></sub></a><br /></td>
-      <td align="center"><a href="https://github.com/Sujina2024"><img src="" width="100px;" alt=""/><br /><sub><b>🐰정수진</b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/jeongjinjoo"><img src="width="120px;" alt=""/><br /><sub><b> 🧸정진주 </b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/yoousung"><img src="" width="120px;" alt=""/><br /><sub><b>🐶 강유성</b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/sjpark-08"><img src="" width="120px;" alt=""/><br /><sub><b>🦊박성준</b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/tkckdnjs"><img src="" width="120px;" alt=""/><br /><sub><b>🐥이은서</b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/Sujina2024"><img src="" width="120px;" alt=""/><br /><sub><b>🐰정수진</b></sub></a><br /></td>
      <tr/>
   </tbody>
 </table>
 
-
+<div align="left">
 # 📣 프로젝트 목적 및 효과
 
 **1. 소비자의 시간과 비용 절약 :**
