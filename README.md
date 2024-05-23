@@ -26,14 +26,14 @@
   </tbody>
 </table>
 </div>
-
+<div align="center">
   ✒️ TOOL
  <h4>
 <!-- 기술 스택 (아이콘) -->
 <img src="https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=mariaDB&logoColor=white"/>
         <img src="https://img.shields.io/badge/Ubunt-e95420?style=flat-square&logo=mariaDB&logoColor=white"/>
         </h4>
-
+</div>
 
 ## 📣 프로젝트 목적 및 효과
 
