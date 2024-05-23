@@ -1,7 +1,7 @@
 # 플래너
 
 <p align="center">
-  <img src= "" width="100%" height="100%">
+  <img src= ""C:\Users\Playdata\Desktop\사진\1차 프로젝트\001.png"" width="100%" height="100%">
 </p> 
 <br/>
 
