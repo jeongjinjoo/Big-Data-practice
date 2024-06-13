@@ -1,0 +1,405 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyO8w1+54+QeoFZ99eSSIcf5",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/jeongjinjoo/Big-Data-practice/blob/main/Stellar_261\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "별의 관측 정보와 각종 필터값, 사용한 장비에 대한 정보를 담고 있다.\n",
+        "- 분류분석 진행\n"
+      ],
+      "metadata": {
+        "id": "4cilz4Q6Ig1o"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 21,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_5msesSkGcAb",
+        "outputId": "60932de3-85e0-4a77-dc80-10b9390f6fc7"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "fatal: destination path 'yemoonsaBigdata' already exists and is not an empty directory.\n"
+          ]
+        }
+      ],
+      "source": [
+        "!git clone https://github.com/AnalyticsKnight/yemoonsaBigdata/"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 출력을 원하실 경우 print() 함수 활용\n",
+        "# 예시) print(df.head())\n",
+        "\n",
+        "# getcwd(), chdir() 등 작업 폴더 설정 불필요\n",
+        "# 파일 경로 상 내부 드라이브 경로(C: 등) 접근 불가\n",
+        "\n",
+        "# 데이터 파일 읽기 예제\n",
+        "import pandas as pd\n",
+        "X_test = pd.read_csv(\"./yemoonsaBigdata/datasets/Part2/stellar_X_test.csv\")\n",
+        "X_train = pd.read_csv(\"./yemoonsaBigdata/datasets/Part2/stellar_X_train.csv\")\n",
+        "y_train = pd.read_csv(\"./yemoonsaBigdata/datasets/Part2/stellar_y_train.csv\")\n",
+        "\n",
+        "# 사용자 코딩\n",
+        "\n",
+        "# 답안 제출 참고\n",
+        "# 아래 코드 예측변수와 수험번호를 개인별로 변경하여 활용\n",
+        "# pd.DataFrame({'gender': pred}).to_csv('003000000.csv', index=False)"
+      ],
+      "metadata": {
+        "id": "siwkPTbrGdaY"
+      },
+      "execution_count": 40,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(X_test)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zU-55TyQHKwV",
+        "outputId": "238c36ef-feee-49db-e686-c7a7d3c7560c"
+      },
+      "execution_count": 41,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "            alpha      delta         u         g         r         i  \\\n",
+            "0      142.166027  13.536429  21.42446  19.53691  18.18353  17.59657   \n",
+            "1      116.088149  26.949937  20.48685  19.00607  18.44338  18.20560   \n",
+            "2      201.286124   4.097227  23.52719  21.24909  19.76896  18.99981   \n",
+            "3      152.185870  19.886606  24.82430  23.75300  21.36504  20.08455   \n",
+            "4      213.083695  15.526493  21.67625  20.82496  20.92687  20.88137   \n",
+            "...           ...        ...       ...       ...       ...       ...   \n",
+            "29995  239.595627  11.692894  18.87798  17.54985  16.86987  16.63145   \n",
+            "29996  152.380050  46.340939  21.56025  21.50145  21.91232  21.57489   \n",
+            "29997  259.314479  32.547807  20.75643  20.78799  20.57415  20.67004   \n",
+            "29998   17.081431   6.355256  23.70894  22.11489  21.09853  20.07698   \n",
+            "29999  323.146144   0.069929  22.92516  22.09725  20.76648  19.62534   \n",
+            "\n",
+            "              z  redshift  run_ID  rerun_ID  cam_col  field_ID  plate  \n",
+            "0      17.20218  0.250623    5972       301        5       179   5310  \n",
+            "1      18.11390 -0.000118    2864       301        6        52   2075  \n",
+            "2      18.51799  0.496353    2247       301        2       270   4761  \n",
+            "3      19.40960  0.653446    5183       301        5       144   5893  \n",
+            "4      21.34768 -0.000079    5322       301        3        24   5455  \n",
+            "...         ...       ...     ...       ...      ...       ...    ...  \n",
+            "29995  16.43581  0.028974    5308       301        3       315   2523  \n",
+            "29996  21.91075  1.951386    2964       301        6       176   7384  \n",
+            "29997  20.42436  0.981864    2335       301        6       100  11654  \n",
+            "29998  19.51570 -0.000160    5641       301        1       110   4423  \n",
+            "29999  19.08746  0.618316    4187       301        4       103   4194  \n",
+            "\n",
+            "[30000 rows x 13 columns]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(X_train.info())"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "15XZESzOHhPt",
+        "outputId": "9c53dfbf-5be2-449f-c386-28b19eebb596"
+      },
+      "execution_count": 42,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'pandas.core.frame.DataFrame'>\n",
+            "RangeIndex: 70000 entries, 0 to 69999\n",
+            "Data columns (total 13 columns):\n",
+            " #   Column    Non-Null Count  Dtype  \n",
+            "---  ------    --------------  -----  \n",
+            " 0   alpha     70000 non-null  float64\n",
+            " 1   delta     70000 non-null  float64\n",
+            " 2   u         70000 non-null  float64\n",
+            " 3   g         70000 non-null  float64\n",
+            " 4   r         70000 non-null  float64\n",
+            " 5   i         70000 non-null  float64\n",
+            " 6   z         70000 non-null  float64\n",
+            " 7   redshift  70000 non-null  float64\n",
+            " 8   run_ID    70000 non-null  int64  \n",
+            " 9   rerun_ID  70000 non-null  int64  \n",
+            " 10  cam_col   70000 non-null  int64  \n",
+            " 11  field_ID  70000 non-null  int64  \n",
+            " 12  plate     70000 non-null  int64  \n",
+            "dtypes: float64(8), int64(5)\n",
+            "memory usage: 6.9 MB\n",
+            "None\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(X_train.describe())"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KMEjHwzEHti9",
+        "outputId": "12585b07-952a-4f3c-b8b7-c0fbe5c8e814"
+      },
+      "execution_count": 43,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "              alpha         delta             u             g             r  \\\n",
+            "count  70000.000000  70000.000000  70000.000000  70000.000000  70000.000000   \n",
+            "mean     177.535809     24.107885     21.938806     20.486718     19.644011   \n",
+            "std       96.483093     19.665057     37.942814     37.925201      1.852053   \n",
+            "min        0.005528    -18.785328  -9999.000000  -9999.000000      9.822070   \n",
+            "25%      127.385304      5.115922     20.349987     18.957325     18.136183   \n",
+            "50%      180.706865     23.579507     22.183860     21.095445     20.122805   \n",
+            "75%      233.942154     39.871336     23.684145     22.121073     21.039012   \n",
+            "max      359.999615     82.947622     32.781390     31.602240     29.571860   \n",
+            "\n",
+            "                  i             z      redshift        run_ID  rerun_ID  \\\n",
+            "count  70000.000000  70000.000000  70000.000000  70000.000000   70000.0   \n",
+            "mean      19.082969     18.624590      0.575246   4478.649443     301.0   \n",
+            "std        1.755997     37.904705      0.729921   1965.326847       0.0   \n",
+            "min        9.469903  -9999.000000     -0.009971    109.000000     301.0   \n",
+            "25%       17.733732     17.463838      0.052602   3185.000000     301.0   \n",
+            "50%       19.399590     19.001010      0.422838   4188.000000     301.0   \n",
+            "75%       20.391340     19.917578      0.700399   5326.000000     301.0   \n",
+            "max       32.141470     28.790550      7.011245   8162.000000     301.0   \n",
+            "\n",
+            "            cam_col      field_ID         plate  \n",
+            "count  70000.000000  70000.000000  70000.000000  \n",
+            "mean       3.510500    186.045714   5127.852900  \n",
+            "std        1.585203    148.661268   2947.452991  \n",
+            "min        1.000000     11.000000    266.000000  \n",
+            "25%        2.000000     82.000000   2525.750000  \n",
+            "50%        4.000000    146.000000   4978.000000  \n",
+            "75%        5.000000    241.000000   7389.000000  \n",
+            "max        6.000000    989.000000  12547.000000  \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(y_train.info())"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jSgiCqHOXHh9",
+        "outputId": "d4d63d3f-b796-4d4b-cea2-409de9c13a6b"
+      },
+      "execution_count": 44,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'pandas.core.frame.DataFrame'>\n",
+            "RangeIndex: 70000 entries, 0 to 69999\n",
+            "Data columns (total 1 columns):\n",
+            " #   Column  Non-Null Count  Dtype\n",
+            "---  ------  --------------  -----\n",
+            " 0   galaxy  70000 non-null  int64\n",
+            "dtypes: int64(1)\n",
+            "memory usage: 547.0 KB\n",
+            "None\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(X_test.info())"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dOWX3btIXiCU",
+        "outputId": "60c06626-9c5a-4955-ff37-6c71596a4221"
+      },
+      "execution_count": 45,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'pandas.core.frame.DataFrame'>\n",
+            "RangeIndex: 30000 entries, 0 to 29999\n",
+            "Data columns (total 13 columns):\n",
+            " #   Column    Non-Null Count  Dtype  \n",
+            "---  ------    --------------  -----  \n",
+            " 0   alpha     30000 non-null  float64\n",
+            " 1   delta     30000 non-null  float64\n",
+            " 2   u         30000 non-null  float64\n",
+            " 3   g         30000 non-null  float64\n",
+            " 4   r         30000 non-null  float64\n",
+            " 5   i         30000 non-null  float64\n",
+            " 6   z         30000 non-null  float64\n",
+            " 7   redshift  30000 non-null  float64\n",
+            " 8   run_ID    30000 non-null  int64  \n",
+            " 9   rerun_ID  30000 non-null  int64  \n",
+            " 10  cam_col   30000 non-null  int64  \n",
+            " 11  field_ID  30000 non-null  int64  \n",
+            " 12  plate     30000 non-null  int64  \n",
+            "dtypes: float64(8), int64(5)\n",
+            "memory usage: 3.0 MB\n",
+            "None\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 이상치 제거\n",
+        "y_train = y_train.loc[X_train.u != -9999]\n",
+        "X_train = X_train.loc[X_train.u != -9999]\n",
+        "\n",
+        "X_train.reset_index(drop=True, inplace=True)\n",
+        "y_train.reset_index(drop=True, inplace=True)"
+      ],
+      "metadata": {
+        "id": "vL2wAIpXIxHV"
+      },
+      "execution_count": 48,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(X_train.describe())"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "S7K_0bd0V5S7",
+        "outputId": "33c51910-1b81-4196-9b3e-0e2282962336"
+      },
+      "execution_count": 49,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "              alpha         delta             u             g             r  \\\n",
+            "count  69999.000000  69999.000000  69999.000000  69999.000000  69999.000000   \n",
+            "mean     177.535145     24.108238     22.081964     20.629856     19.644032   \n",
+            "std       96.483622     19.664976      2.248554      2.033576      1.852057   \n",
+            "min        0.005528    -18.785328     10.996230     10.498200      9.822070   \n",
+            "25%      127.384192      5.117238     20.350000     18.957435     18.136075   \n",
+            "50%      180.705886     23.580630     22.183900     21.095450     20.122810   \n",
+            "75%      233.942330     39.872079     23.684160     22.121075     21.039035   \n",
+            "max      359.999615     82.947622     32.781390     31.602240     29.571860   \n",
+            "\n",
+            "                  i             z      redshift        run_ID  rerun_ID  \\\n",
+            "count  69999.000000  69999.000000  69999.000000  69999.000000   69999.0   \n",
+            "mean      19.082984     18.767701      0.575254   4478.702681     301.0   \n",
+            "std        1.756005      1.764734      0.729923   1965.290408       0.0   \n",
+            "min        9.469903      9.612333     -0.009971    109.000000     301.0   \n",
+            "25%       17.733685     17.463885      0.052608   3185.000000     301.0   \n",
+            "50%       19.399590     19.001020      0.422848   4188.000000     301.0   \n",
+            "75%       20.391350     19.917595      0.700399   5326.000000     301.0   \n",
+            "max       32.141470     28.790550      7.011245   8162.000000     301.0   \n",
+            "\n",
+            "            cam_col      field_ID         plate  \n",
+            "count  69999.000000  69999.000000  69999.000000  \n",
+            "mean       3.510522    186.040701   5127.878813  \n",
+            "std        1.585204    148.656411   2947.466071  \n",
+            "min        1.000000     11.000000    266.000000  \n",
+            "25%        2.000000     82.000000   2525.500000  \n",
+            "50%        4.000000    146.000000   4978.000000  \n",
+            "75%        5.000000    241.000000   7389.000000  \n",
+            "max        6.000000    989.000000  12547.000000  \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(y_train.describe())"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Nt7gJHePYStW",
+        "outputId": "959cc5af-64bc-4527-a6a7-ab0e190bd3a7"
+      },
+      "execution_count": 50,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "             galaxy\n",
+            "count  69998.000000\n",
+            "mean       0.593803\n",
+            "std        0.491126\n",
+            "min        0.000000\n",
+            "25%        0.000000\n",
+            "50%        1.000000\n",
+            "75%        1.000000\n",
+            "max        1.000000\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
